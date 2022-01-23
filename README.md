@@ -1,5 +1,7 @@
 # Frontend performance
 
+![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=frontend-performance&style=for-the-badge&logo=true)
+
 ## Description
 
 Recruitment technical task to prove my mettle.  
