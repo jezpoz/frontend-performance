@@ -10,4 +10,6 @@ So the task is like this:
 > - Hero: Video (above-the-fold for mobile)
 > - Body: Paragraph collection of text and images
 
+Oh, and I have to use a specific query.
+
 ## Hype! Lets go!
