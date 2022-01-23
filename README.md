@@ -1,5 +1,7 @@
 # Frontend performance
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0b2ed7a4-1e81-4460-b43e-caafd4434f53/deploy-status)](https://app.netlify.com/sites/hardcore-jang-205180/deploys)
+
 ## Description
 
 Recruitment technical task to prove my mettle.  
