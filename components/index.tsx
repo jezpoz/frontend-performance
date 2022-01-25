@@ -1,17 +1,17 @@
-import TitleComponent, { TitleComponentProps } from './title/title';
+import PageTitleComponent from './page-title';
 import HeroComponent from './hero';
-import Body from './body';
+import BodyComponent from './body';
 
 export default function ([type, content], index) {
   switch (type) {
     case 'title': {
-      return <TitleComponent key={index} {...content as TitleComponentProps}/>
+      return <PageTitleComponent key={index} {...content} />
     }
     case 'hero': {
       return <HeroComponent key={index} {...content} />
     }
     case 'body': {
-      return <Body key={index} {...content} />
+      return <BodyComponent key={index} {...content} />
     }
     default: {
       return null;

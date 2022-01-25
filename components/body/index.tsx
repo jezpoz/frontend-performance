@@ -6,10 +6,10 @@ export default function Body({content}): JSX.Element {
   return (
     <article className={styles.article}>
       {content.paragraphs.map((paragraph, index) => (
-        <section key={index} className={styles.articleSection}>
+        <section key={index} className={styles.contentWrapper}>
           {paragraph.title && <h2 className='article-header'>{paragraph.title.text}</h2>}
           {paragraph.body?.json && <Paragraph json={paragraph.body.json} />}
-          {paragraph.images && paragraph.images.map((image, index) => <Image key={index} image={image} width="800" height="auto"/>)}
+          {paragraph.images && paragraph.images.map((image, index) => <Image key={index} image={image}/>)}
         </section>
       ))}
     </article>

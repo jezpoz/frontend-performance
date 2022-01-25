@@ -1,14 +1,18 @@
 @import "../../styles/colors.scss";
 
-.paragraph {
-  :nth-of-type(2n) {
-    text-align: right;
+.paragraphLink {
+  color: inherit;
+  :visited {
+    color: inherit;
+  }
+  :active {
+    color: inherit;
   }
 }
 
 .ulist {
   ::marker {
-    color: $font-primary;
+    list-style-type: none;
   }
 }
 

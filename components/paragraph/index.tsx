@@ -7,6 +7,7 @@ const overrides: Overrides = {
 		<a
 			href={props.metadata?.href}
 			rel='no-follow'
+			className={styles.paragraphLink}
 		>
 			<NodeContent {...props} />
 		</a>

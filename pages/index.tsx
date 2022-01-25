@@ -1,4 +1,4 @@
-import { GetStaticProps, GetStaticPropsContext } from 'next';
+import { GetStaticProps } from 'next';
 import Head from 'next/head';
 import { getPageContent } from '../sources/crystallize';
 import Components from '../components';
@@ -14,7 +14,7 @@ function HomePage({content}) {
 	);
 }
 
-export const getStaticProps: GetStaticProps = async (context: GetStaticPropsContext) => {
+export const getStaticProps: GetStaticProps = async () => {
 	const pageContent = await getPageContent();
 
 	return {

@@ -1,14 +1,25 @@
-.hero {
-  max-width: 800px;
-  margin: 0 auto;
+.videoWrapper {
+  padding: 20px;
+  background-color: #99E1D9;
+  border-radius: 20px;
 
-  .react-video {
-    width: 800px;
-    height: auto;
+  @media (max-width: 1600px) {
+    margin: 0 20px 12px 12px;
+  }
 
-    &__thumbnail {
-      width: 800px;
-      height: auto;
+  .heroVideo {
+    border-radius: 20px;
+
+    .heroVideoThumbnail {
+      border-radius: 20px;
+      img {
+        border-radius: 20px;
+        width: 100%;
+      }
+    }
+
+    button {
+      border-radius: 20px;
     }
   }
 }
