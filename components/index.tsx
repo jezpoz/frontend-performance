@@ -1,4 +1,4 @@
-import TitleComponent, { TitleComponentProps } from './title';
+import TitleComponent, { TitleComponentProps } from './title/title';
 import HeroComponent from './hero';
 import Body from './body';
 

@@ -1,0 +1,15 @@
+@import "../../styles/colors.scss";
+
+.paragraph {
+  :nth-of-type(2n) {
+    text-align: right;
+  }
+}
+
+.ulist {
+  ::marker {
+    color: $font-primary;
+  }
+}
+
+

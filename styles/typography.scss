@@ -1,0 +1,35 @@
+body {
+  font-family: 'Roboto';
+	font-size: 16px;
+}
+
+/* Reset any padding or margin */
+h1, h2, h3, h4, h5, p, a {
+	margin: 0;
+	padding: 0 0 12px 0;
+  color: $font-primary;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.75rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+h4 {
+	font-size: 1.3rem;
+}
+
+h5 {
+	font-size: 1.2rem;
+}
+
+p {
+	font-size: 1rem;
+}

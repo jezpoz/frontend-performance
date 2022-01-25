@@ -9,9 +9,7 @@ function HomePage({content}) {
 			<Head>
 				<title>Frontend performance</title>
 			</Head>
-			<div>
-				 {Object.entries(content).map(Components)}
-			</div>
+			{Object.entries(content).map(Components)}
 		</>
 	);
 }
