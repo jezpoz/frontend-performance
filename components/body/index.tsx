@@ -9,7 +9,7 @@ export default function Body({content}): JSX.Element {
         <section key={index} className={styles.articleSection}>
           {paragraph.title && <h2 className='article-header'>{paragraph.title.text}</h2>}
           {paragraph.body?.json && <Paragraph json={paragraph.body.json} />}
-          {paragraph.images && paragraph.images.map((image, index) => <Image className="paragraph-image" key={index} image={image} sizes="(max-width: 600px) 80px, 300px"/>)}
+          {paragraph.images && paragraph.images.map((image, index) => <Image key={index} image={image} width="800" height="auto"/>)}
         </section>
       ))}
     </article>

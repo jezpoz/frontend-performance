@@ -2,11 +2,15 @@ import { ContentTransformer, NodeContent, Overrides, NodeProps } from '@crystall
 import styles from './paragraph.module.scss';
 
 const overrides: Overrides = {
-	link: (props: NodeProps) => (
-		<a href={props.metadata?.href}>
+	link: (props: NodeProps) => {
+		return (
+		<a
+			href={props.metadata?.href}
+			rel='no-follow'
+		>
 			<NodeContent {...props} />
 		</a>
-	),
+	)},
 	paragraph: (props: NodeProps) => (
 		<p className={styles.paragraph}>
 			<NodeContent {...props} />
