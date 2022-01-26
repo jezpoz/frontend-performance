@@ -12,7 +12,7 @@ export default function HeroComponent({ content }): JSX.Element {
           className={styles.heroVideo}
           videoProps={{
             height: 'auto',
-            sizes: '(min-width: 768px)',
+            // sizes: '(min-width: 768px)',
             width: 1600,
             type: 'application/x-mpegURL'
           }}
