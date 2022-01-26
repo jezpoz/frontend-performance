@@ -9,8 +9,9 @@ export default function ({ image, ...rest }) {
 	return (
 			<Image
 				className={styles.image}
-				sizes='(min-width: 1600px) 1600px, 100vw'
-				loading="lazy"
+				sizes='(min-width: 768px)'
+        width={1600}
+				loading="eager"
 				{...image}
 				{...rest}
 			/>
