@@ -6,8 +6,15 @@ export default function HeroComponent({ content }): JSX.Element {
   function renderVideo(video) {
     return (
       <div className={styles.videoWrapper}>
+        <span className={styles.videoPrimaryShadow}></span>
+        <span className={styles.videoSecondaryShadow}></span>
         <Video
           className={styles.heroVideo}
+          videoProps={{
+            height: 'auto',
+            sizes: '(min-width: 768px)',
+            width: 1600,
+          }}
           thumbnailProps={{
             className: styles.heroVideoThumbnail,
             loading: 'eager',
