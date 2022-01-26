@@ -3,7 +3,11 @@ import styles from './title.module.scss';
 export default function PageTitleComponent({content}): JSX.Element {
   return (
     <header className={styles.titleWrapper}>
-      <h1 className={styles.title + ' highlight'}><span>{content.text}</span></h1>
+      <div className={styles.titleInner}>
+        <span className={styles.titlePrimaryShadow}></span>
+        <span className={styles.titleSecondaryShadow}></span>
+        <h1 className={styles.title}>{content.text}</h1>
+      </div>
     </header>
   )
 }
