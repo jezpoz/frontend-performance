@@ -20,7 +20,13 @@ export default function App ({ Component, pageProps }) {
 				<meta name="twitter:site" content="@jezpoz"></meta>
 				<meta name="twitter:creator" content="@jezpoz"></meta>
 				{/* Fix video for mobile */}
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/hls.js/0.5.14/hls.min.js" integrity="sha512-js37JxjD6gtmJ3N2Qzl9vQm4wcmTilFffk0nTSKzgr3p6aitg73LR205203wTzCCC/NZYO2TAxSa0Lr2VMLQvQ==" crossOrigin="anonymous" referrerPolicy="no-referrer"></script>
+				<script
+					src="https://cdnjs.cloudflare.com/ajax/libs/hls.js/0.5.14/hls.min.js"
+					integrity="sha512-js37JxjD6gtmJ3N2Qzl9vQm4wcmTilFffk0nTSKzgr3p6aitg73LR205203wTzCCC/NZYO2TAxSa0Lr2VMLQvQ=="
+					crossOrigin="anonymous"
+					referrerPolicy="no-referrer"
+					defer
+				></script>
 			</Head>
 			<main>
 				<Component {...pageProps} />
