@@ -1,3 +1,5 @@
+@import '../../styles/colors.scss';
+
 .image {
   position: relative;
   margin: 0 auto;
@@ -7,6 +9,11 @@
     img {
       width: 100%;
       height: auto;
+
+      &::selection {
+        background-color: $secondary-accent;
+        color: $secondary-accent;
+      }
     }
   }
 }

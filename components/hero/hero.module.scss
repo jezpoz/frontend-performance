@@ -24,6 +24,11 @@
       img {
         width: 100%;
         height: auto;
+
+        &::selection {
+          background-color: $secondary-accent;
+          color: $secondary-accent;
+        }
       }
     }
   }
