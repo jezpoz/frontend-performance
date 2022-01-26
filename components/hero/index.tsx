@@ -11,7 +11,8 @@ export default function HeroComponent({ content }): JSX.Element {
           thumbnailProps={{
             className: styles.heroVideoThumbnail,
             height: 'auto',
-            sizes: '(min-width: 3500px) 3500px, (min-width: 2000px) 3500px, (min-width: 1440px) 2000px, (min-width: 1080px) 1440px, (min-width: 720px) 1080px, (min-width: 460px) 720px, 460px',
+            sizes: '(min-width: 1600px) 1600px, 100vw',
+            width: 640,
           }}
           {...video}
         />
