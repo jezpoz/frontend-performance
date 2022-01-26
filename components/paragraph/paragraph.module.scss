@@ -2,6 +2,7 @@
 
 .paragraphLink {
   color: inherit;
+
   :visited {
     color: inherit;
   }
@@ -11,8 +12,14 @@
 }
 
 .ulist {
-  ::marker {
-    list-style-type: none;
+  margin-bottom: 32px;
+
+  li {
+    padding: 12px;
+
+    &::marker {
+      content: '⚡'
+    }
   }
 }
 

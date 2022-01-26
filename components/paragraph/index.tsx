@@ -4,13 +4,13 @@ import styles from './paragraph.module.scss';
 const overrides: Overrides = {
 	link: (props: NodeProps) => {
 		return (
-		<a
-			href={props.metadata?.href}
-			rel='no-follow'
-			className={styles.paragraphLink}
-		>
-			<NodeContent {...props} />
-		</a>
+				<a
+					href={props.metadata?.href}
+					rel='no-follow'
+					className={styles.paragraphLink}
+				>
+					<NodeContent {...props} />
+				</a>
 	)},
 	paragraph: (props: NodeProps) => (
 		<p className={styles.paragraph}>

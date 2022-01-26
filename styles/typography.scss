@@ -27,6 +27,7 @@ p {
 	font-size: 2rem;
 	font-weight: 500;
 	margin-top: 0;
+	line-height: 40px;
 
 	&:last-child {
 		margin-bottom: 0;
@@ -74,7 +75,41 @@ ul {
 
 	ul {
 		li {
+			padding: 12px;
 			font-size: 1.25rem;
 		}
+	}
+}
+
+.highlight {
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+
+	&::before, &::after {
+		position: absolute;
+		z-index: 0;
+		display: block;
+		width: 100%;
+		height: 100%;
+		content: "";
+	}
+	
+	span {
+		position: relative;
+    z-index: 1;
+		padding: 0.5ch;
+	}
+
+	&::before {
+		top: -0.1em;
+		left: 0.15em;
+		background-color: rgba($primary-accent, 0.3);
+	}
+
+	&::after {
+		top: 0.1em;
+		left: 0em;
+		background-color: rgba($secondary-accent, 0.5);
 	}
 }
