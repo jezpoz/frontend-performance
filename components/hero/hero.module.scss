@@ -22,8 +22,12 @@
   .heroVideo {
     .heroVideoThumbnail {
       img {
-        width: 100%;
+        width: 1600px;
         height: auto;
+
+        @media (max-width: 1600px) {
+          width: calc(100vw - 55px);
+        }
 
         &::selection {
           background-color: $secondary-accent;
